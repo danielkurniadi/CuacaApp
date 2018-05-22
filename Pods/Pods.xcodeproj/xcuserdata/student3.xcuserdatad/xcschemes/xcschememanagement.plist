@@ -4,15 +4,29 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>CuacaApp.xcscheme</key>
+		<key>Alamofire.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
-			<integer>2</integer>
+			<integer>0</integer>
+		</dict>
+		<key>Pods-CuacaApp.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>D7EFF2FA205242A90043FF0C</key>
+		<key>67A8FC6A86986966E76CABD63E4BAA3A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
 		<dict>
 			<key>primary</key>
 			<true/>

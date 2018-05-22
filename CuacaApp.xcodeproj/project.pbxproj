@@ -7,21 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87CB78F3384D40158A5D35AE /* Pods_CuacaApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A96459F2C2CFF295065A41B /* Pods_CuacaApp.framework */; };
 		D7EFF2FF205242A90043FF0C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFF2FE205242A90043FF0C /* AppDelegate.swift */; };
-		D7EFF301205242A90043FF0C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFF300205242A90043FF0C /* ViewController.swift */; };
+		D7EFF301205242A90043FF0C /* HomeWeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFF300205242A90043FF0C /* HomeWeatherVC.swift */; };
 		D7EFF304205242A90043FF0C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7EFF302205242A90043FF0C /* Main.storyboard */; };
 		D7EFF306205242A90043FF0C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7EFF305205242A90043FF0C /* Assets.xcassets */; };
 		D7EFF309205242A90043FF0C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7EFF307205242A90043FF0C /* LaunchScreen.storyboard */; };
+		D7EFF314205247440043FF0C /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFF313205247440043FF0C /* CurrentWeather.swift */; };
+		D7EFF31620524B3B0043FF0C /* ForecastService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7EFF31520524B3B0043FF0C /* ForecastService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A96459F2C2CFF295065A41B /* Pods_CuacaApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CuacaApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9FC8F2FC2259F95D11A1B33D /* Pods-CuacaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuacaApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CuacaApp/Pods-CuacaApp.release.xcconfig"; sourceTree = "<group>"; };
 		D7EFF2FB205242A90043FF0C /* CuacaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CuacaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7EFF2FE205242A90043FF0C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7EFF300205242A90043FF0C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D7EFF300205242A90043FF0C /* HomeWeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeWeatherVC.swift; path = CuacaApp/Controller/HomeWeatherVC.swift; sourceTree = SOURCE_ROOT; };
 		D7EFF303205242A90043FF0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D7EFF305205242A90043FF0C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7EFF308205242A90043FF0C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7EFF30A205242A90043FF0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7EFF313205247440043FF0C /* CurrentWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
+		D7EFF31520524B3B0043FF0C /* ForecastService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastService.swift; sourceTree = "<group>"; };
+		D98A9A7507B52B67CD73AAC4 /* Pods-CuacaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CuacaApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CuacaApp/Pods-CuacaApp.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87CB78F3384D40158A5D35AE /* Pods_CuacaApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A3E69B8F90122B8D56A43D3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D98A9A7507B52B67CD73AAC4 /* Pods-CuacaApp.debug.xcconfig */,
+				9FC8F2FC2259F95D11A1B33D /* Pods-CuacaApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		81862B23AFF42FF2DE141C48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A96459F2C2CFF295065A41B /* Pods_CuacaApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D7EFF2F2205242A90043FF0C = {
 			isa = PBXGroup;
 			children = (
 				D7EFF2FD205242A90043FF0C /* CuacaApp */,
 				D7EFF2FC205242A90043FF0C /* Products */,
+				1A3E69B8F90122B8D56A43D3 /* Pods */,
+				81862B23AFF42FF2DE141C48 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +83,39 @@
 			isa = PBXGroup;
 			children = (
 				D7EFF2FE205242A90043FF0C /* AppDelegate.swift */,
-				D7EFF300205242A90043FF0C /* ViewController.swift */,
-				D7EFF302205242A90043FF0C /* Main.storyboard */,
-				D7EFF305205242A90043FF0C /* Assets.xcassets */,
+				D7EFF312205247230043FF0C /* Model */,
+				D7EFF311205247140043FF0C /* Controller */,
+				D7EFF310205246F50043FF0C /* View */,
 				D7EFF307205242A90043FF0C /* LaunchScreen.storyboard */,
 				D7EFF30A205242A90043FF0C /* Info.plist */,
 			);
 			path = CuacaApp;
+			sourceTree = "<group>";
+		};
+		D7EFF310205246F50043FF0C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7EFF302205242A90043FF0C /* Main.storyboard */,
+				D7EFF305205242A90043FF0C /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7EFF311205247140043FF0C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D7EFF300205242A90043FF0C /* HomeWeatherVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D7EFF312205247230043FF0C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7EFF313205247440043FF0C /* CurrentWeather.swift */,
+				D7EFF31520524B3B0043FF0C /* ForecastService.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +125,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7EFF30D205242A90043FF0C /* Build configuration list for PBXNativeTarget "CuacaApp" */;
 			buildPhases = (
+				9EC91D4684917F6B606093D3 /* [CP] Check Pods Manifest.lock */,
 				D7EFF2F7205242A90043FF0C /* Sources */,
 				D7EFF2F8205242A90043FF0C /* Frameworks */,
 				D7EFF2F9205242A90043FF0C /* Resources */,
+				D5AB1DF097824C9423455C54 /* [CP] Embed Pods Frameworks */,
+				80DEB55DB8249EB82E261A4F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +188,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		80DEB55DB8249EB82E261A4F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CuacaApp/Pods-CuacaApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9EC91D4684917F6B606093D3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CuacaApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5AB1DF097824C9423455C54 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CuacaApp/Pods-CuacaApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CuacaApp/Pods-CuacaApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D7EFF2F7205242A90043FF0C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D7EFF301205242A90043FF0C /* ViewController.swift in Sources */,
+				D7EFF31620524B3B0043FF0C /* ForecastService.swift in Sources */,
+				D7EFF301205242A90043FF0C /* HomeWeatherVC.swift in Sources */,
+				D7EFF314205247440043FF0C /* CurrentWeather.swift in Sources */,
 				D7EFF2FF205242A90043FF0C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +385,7 @@
 		};
 		D7EFF30E205242A90043FF0C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D98A9A7507B52B67CD73AAC4 /* Pods-CuacaApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +401,7 @@
 		};
 		D7EFF30F205242A90043FF0C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9FC8F2FC2259F95D11A1B33D /* Pods-CuacaApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

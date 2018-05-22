@@ -1,0 +1,6 @@
+framework module Pods_CuacaApp {
+  umbrella header "Pods-CuacaApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
